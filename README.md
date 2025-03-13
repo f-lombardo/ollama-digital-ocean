@@ -12,3 +12,6 @@ such as not having encrypted http traffic!
 5. Connect to your dropled using ssh or the connection console provided inside Digital Ocean dashboard. Inside it start your LLM model with `ollama run model_name`
 6. At this point you should be able to connect to Ollama API at `http://ip_address:11434/api/`
 7. When you no longer need your droplet remember to delete it, otherwise you'll pay for it even if it is not active. To do that you can use [/scripts/digital_ocean_delete.sh](/scripts/digital_ocean_delete.sh) passing the name or the ID of the droplet.
+
+Initialization of the new droplet will be performed by the [droplet_init](scripts/droplet_init.sh) script, 
+so you chan change it if you need a different set of features in your droplet.
